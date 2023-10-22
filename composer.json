@@ -1,0 +1,27 @@
+{
+    "name": "fibdesign/bale",
+    "description": "A simple way to send messages to Bale Messenger channels and groups.",
+    "type": "plugin",
+    "version": "0.1.0",
+    "autoload": {
+        "psr-4": {
+            "Fibdesign\\Bale\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sadegh",
+            "email": "74778568+msghaderi77@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "ext-curl": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Fibdesign\\Bale\\Providers\\BaleProvider"
+            ]
+        }
+    }
+}
